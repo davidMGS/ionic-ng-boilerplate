@@ -22,7 +22,10 @@ $ npm -g install grunt-cli karma bower cordova ionic
 $ npm install
 $ bower install
 $ grunt serve
-$ grunt (this command executes grunt build and then grunt compile)
+```
+Load http://localhost:9000 to see skeleton app
+
+```sh
 $ ionic platform android
 $ ionic run android (to run on smartphone)
 $ ionic emulate android (to run on emulator)

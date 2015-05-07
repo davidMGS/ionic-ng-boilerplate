@@ -12,6 +12,17 @@ module.exports = {
     src_dir: 'src',
 
     /**
+     * API Endpoint definitions
+     *
+     * URLs for staging and production
+     * NOTE: URLS must end with a trailing slash.  The UI assumes its there.
+     * EX: 'http://localhost:8080/'
+     */
+    api_development_url: 'http://localhost:8080/',
+    api_staging_url: 'https://api-staging.app.com/',
+    api_production_url: 'https://api.app.com/',
+
+    /**
      * This is a collection of file patterns that refer to our app code (the
      * stuff in `src/`). These file paths are used in the configuration of
      * build tasks. `js` is all project javascript, less tests. `ctpl` contains
@@ -21,16 +32,16 @@ module.exports = {
      * app's unit tests.
      */
     app_files: {
-        js: [ 'src/**/*.js', '!src/**/*.spec.js', '!src/assets/**/*.js' ],
-        jsunit: [ 'src/**/*.spec.js' ],
+        js: ['src/**/*.js', '!src/**/*.spec.js', '!src/assets/**/*.js'],
+        jsunit: ['src/**/*.spec.js'],
 
-        coffee: [ 'src/**/*.coffee', '!src/**/*.spec.coffee' ],
-        coffeeunit: [ 'src/**/*.spec.coffee' ],
+        coffee: ['src/**/*.coffee', '!src/**/*.spec.coffee'],
+        coffeeunit: ['src/**/*.spec.coffee'],
 
-        atpl: [ 'src/app/**/*.tpl.html' ],
-        ctpl: [ 'src/common/**/*.tpl.html' ],
+        atpl: ['src/app/**/*.tpl.html'],
+        ctpl: ['src/common/**/*.tpl.html'],
 
-        html: [ 'src/index.html' ],
+        html: ['src/index.html'],
         less: 'src/less/main.less',
         scss: 'src/scss/main.scss'
     },
@@ -38,7 +49,7 @@ module.exports = {
     config_file: "ionic-ng-boilerplate-config",
 
     exclude_files: {
-        js: [ '!build/src/app/config.js']
+        js: ['!build/src/app/config.js']
     },
 
     /**
@@ -70,16 +81,25 @@ module.exports = {
      */
     vendor_files: {
         js: [
-            'vendor/ionic/js/ionic.bundle.js',
-            'vendor/ngCordova/dist/ng-cordova.js'
+            'vendor/angular/angular.js',
+            'vendor/angular-animate/angular-animate.js',
+            'vendor/angular-animate/angular-animate.js',
+            'vendor/angular-resource/angular-resource.js',
+            'vendor/angular-sanitize/angular-sanitize.js',
+            'vendor/angular-ui-router/release/angular-ui-router.js',
+            'vendor/ionic/js/ionic.js',
+            'vendor/ionic/js/ionic-angular.js',
+            'vendor/ngCordova/dist/ng-cordova.js',
+            'vendor/lodash/lodash.js',
+            'vendor/momentjs/moment.js'
         ],
         css: [
-            /*'vendor/ionic/css/ionic.css'*/
+            
         ],
         fonts: [
-            'vendor/ionic/fonts/*'
+            'vendor/ionic/fonts/*',
+            'vendor/font-awesome/fonts/*'
         ],
-        assets: [
-        ]
+        assets: []
     }
 };

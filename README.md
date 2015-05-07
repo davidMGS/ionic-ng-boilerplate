@@ -9,6 +9,9 @@ Boilerplate for quickly start building ionic's apps. Based on ng-boilerplate by 
 ***
 
 ## Quick Start
+Prerequisites:
+- ruby - https://www.ruby-lang.org/en/downloads/
+- sass - gem install sass
 
 Install Node.js and then:
 
@@ -212,31 +215,16 @@ to work.
 To ensure your setup works, launch grunt:
 
 ```sh
-$ grunt watch
+$ grunt serve
 ```
 
-The built files are placed in the `build/` directory by default. Open the
-`build/index.html` file in your browser and check it out! Because everything is
-compiled, no XHR requests are needed to retrieve templates, so until this needs
-to communicate with your backend there is no need to run it from a web server.
-
-`watch` is actually an alias of the `grunt-contrib-watch` that will first run a
-partial build before watching for file changes. With this setup, any file that
-changes will trigger only those build tasks necessary to bring the app up to
-date. For example, when a template file changes, the templates are recompiled
-and concatenated, but when a test/spec file changes, only the tests are run.
-This allows the watch command to complete in a fraction of the time it would
-ordinarily take.
-
-In addition, if you're running a Live Reload plugin in your browser (see below),
-you won't even have to refresh to see the changes! When the `watch` task detects
-a file change, it will reload the page for you. Sweet.
+Open your browser @ localhost:9000 to see app running.
 
 When you're ready to push your app into production, just run the `compile`
 command:
 
 ```sh
-$ grunt compile
+$ grunt production
 ```
 
 This will concatenate and minify your sources and place them by default into the
@@ -311,7 +299,7 @@ ensure the fastest possible build. So whenever you're working on your project,
 start with:
 
 ```sh
-$ grunt watch
+$ grunt serve
 ```
 
 And everything will be done automatically!
@@ -340,28 +328,8 @@ expected, open the `bin/index.html` file in your browser. Voila!
 
 ### Live Reload!
 
-`ionic-ng-boilerplate` also includes [Live Reload](http://livereload.com/), so you no
-longer have to refresh your page after making changes! You need a Live Reload
-browser plugin for this:
-
-- Chrome - [Chrome Webstore](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
-- Firefox - [Download from Live Reload](http://download.livereload.com/2.0.8/LiveReload-2.0.8.xpi)
-- Safari - [Download from Live Reload](http://download.livereload.com/2.0.9/LiveReload-2.0.9.safariextz)
-- Internet Explorer - Surely you jest.
-
-Note that if you're using the Chrome version with `file://` URLs (as is the
-default with `ionic-ng-boilerplate`) you need to tell Live Reload to allow it. Go to
-`Menu -> Tools -> Extensions` and check the "Allow access to file URLs" box next
-to the Live Reload plugin.
-
-When you load your page, click the Live Reload icon in your toolbar and
-everything should work magically. w00t!
-
-If you'd prefer to not install a browser extension, then you must add the
-following to the end of the `body` tag in `index.html`:
-
-```html
-<script src="http://localhost:35729/livereload.js"></script>
+```sh
+$ grunt serve
 ```
 
 Boom!

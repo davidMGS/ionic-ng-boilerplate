@@ -1,10 +1,8 @@
 angular.module('boilerplate-app', [
         'ionic',
         'ngCordova',
-
         'templates-app',
         'templates-common',
-
         'homeModule'
     ])
 

@@ -16,13 +16,12 @@ Prerequisites:
 Install Node.js and then:
 
 ```sh
-$ git clone https://github.com/apompa/ionic-ng-boilerplate.git
+$ git clone https://github.com/davidMGS/ionic-ng-boilerplate.git
 $ cd ionic-ng-boilerplate
-$ sudo npm -g install grunt-cli karma bower cordova ionic
+$ npm -g install grunt-cli karma bower cordova ionic
 $ npm install
 $ bower install
-$ grunt watch
-$ open `file:///path/to/ionic-ng-boilerplate/build/index.html` in your browser.
+$ grunt serve
 $ grunt (this command executes grunt build and then grunt compile)
 $ ionic platform android
 $ ionic run android (to run on smartphone)

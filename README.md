@@ -11,7 +11,7 @@ Boilerplate for quickly start building ionic's apps. Based on ng-boilerplate by 
 ## Quick Start
 Prerequisites:
 - ruby - https://www.ruby-lang.org/en/downloads/
-- sass - gem install sass
+- sass - sudo gem install sass
 
 Install Node.js and then:
 

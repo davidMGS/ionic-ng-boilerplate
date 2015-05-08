@@ -1,24 +1,23 @@
 angular.module('boilerplate-app', [
-        'ionic',
-        'ngCordova',
-        'templates-app',
-        'templates-common',
-        'homeModule'
-    ])
+    'ionic',
+    'ngCordova',
+    'templates-app',
+    'templates-common',
 
-    .run(function ($ionicPlatform, $cordovaSplashscreen) {
-        $ionicPlatform.ready(function () {
-            $cordovaSplashscreen.hide();
-        });
-    })
+    // Insert modules here
+    'boilerplate-app.home'
+])
 
-    .config(['$urlRouterProvider', '$locationProvider', function ($urlRouterProvider, $locationProvider) {
-        //$locationProvider.html5Mode(true);
-        $urlRouterProvider.otherwise("/home");
-    }])
-
-    .controller('AppController', function ($scope) {
-
+.run(function($ionicPlatform, $cordovaSplashscreen) {
+    $ionicPlatform.ready(function() {
+        $cordovaSplashscreen.hide();
     });
+})
 
+.config(['$urlRouterProvider', '$locationProvider', function($urlRouterProvider, $locationProvider) {
+    $urlRouterProvider.otherwise("/home");
+}])
 
+.controller('AppController', function($scope) {
+
+});

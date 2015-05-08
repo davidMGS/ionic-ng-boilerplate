@@ -3,7 +3,7 @@ ionic-ng-boilerplate
 
 Boilerplate for quickly start building ionic's apps. Based on ng-boilerplate by Josh David Miller (http://joshdmiller.github.com/ng-boilerplate).
 
-
+Also, please follow Angular Style Guide by Todd Motto (https://github.com/toddmotto/angularjs-styleguide)
 
 
 ***

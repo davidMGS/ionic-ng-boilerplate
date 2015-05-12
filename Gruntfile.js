@@ -198,8 +198,7 @@ module.exports = function(grunt) {
       build_css: {
         src: [
           '<%= vendor_files.css %>',
-          '<%= build_dir %>/assets/sass.css',
-          '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css'
+          '<%= build_dir %>/assets/sass.css'
 
         ],
         dest: '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css'

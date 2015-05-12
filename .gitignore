@@ -1,12 +1,10 @@
 *.sw*
 *~
 build/
-www/
 vendor/
 node_modules/
 .idea
 .sass-cache/
 src/app/app-config.js
 resources
-plugins/
-platforms/
+.DS_Store
